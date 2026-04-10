@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="photo-detail">
+<h2>{{photo.caption}}</h2>
+<img src="{{url_for('static', filename='images/'~ photo.filename)}}" alt=""><br>
+<a href="{{url_for('home')}}">Back to gallery</a>
+</div>
+{% endblock %}
